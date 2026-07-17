@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Invitación Bibi</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+        <script src="script.js"></script>
+
+</body>
+</html>
+
+    <!-- ========= PORTADA ========= -->
+
+    <section id="portada">
+
+        <img class="portada-img" src="assets/portada.webp" alt="Portada">
+
+        <p class="texto-contador">LA CUENTA REGRESIVA HA COMENZADO</p>
+
+        <div class="contador">
+
+            <div class="tiempo">
+                <span id="dias">00</span>
+                <small>Días</small>
+            </div>
+
+            <div class="tiempo">
+                <span id="horas">00</span>
+                <small>Horas</small>
+            </div>
+
+            <div class="tiempo">
+                <span id="minutos">00</span>
+                <small>Min</small>
+            </div>
+
+            <div class="tiempo">
+                <span id="segundos">00</span>
+                <small>Seg</small>
+            </div>
+
+        </div>
+
+        <button id="btnDetalles">
+
+           ↓  VER DETALLES  ↓
+
+        </button>
+
+    </section>
+
+    <!-- ========= INFORMACIÓN ========= -->
+
+<section id="informacion" class="seccion-informacion">
+
+    <img
+        src="assets/informacion.webp"
+        alt="Información del cumpleaños"
+        class="imagen-informacion"
+    >
+
+    <div class="contenido-informacion">
+
+        <div class="botones-informacion">
+
+            <a href="#" id="btnMapa" class="boton">
+                📍 Cómo llegar
+            </a>
+
+            <a href="#" id="btnWhats" class="boton">
+                💬 Contactar por WhatsApp
+            </a>
+
+        </div>
+
+        <form id="formConfirmacion" class="formulario-confirmacion">
+
+            <h2>Confirma tu asistencia</h2>
+
+            <p class="texto-formulario">
+                Favor de confirmar antes del 3 de agosto
+            </p>
+
+            <label for="nombre">Nombre completo</label>
+
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe tu nombre"
+                required
+                maxlength="80"
+            >
+
+            <label for="asistentes">Número de asistentes</label>
+
+            <select
+                id="asistentes"
+                name="asistentes"
+                required
+            >
+                <option value="">Selecciona una opción</option>
+                <option value="1">1 asistente</option>
+                <option value="2">2 asistentes</option>
+                <option value="3">3 asistentes</option>
+                <option value="4">4 asistentes</option>
+                <option value="5">5 asistentes</option>
+                <option value="6">6 asistentes</option>
+            </select>
+
+            <label for="respuesta">¿Podrás acompañarnos?</label>
+
+            <select
+                id="respuesta"
+                name="respuesta"
+                required
+            >
+                <option value="">Selecciona una respuesta</option>
+                <option value="Sí asistiré">Sí asistiré</option>
+                <option value="No podré asistir">No podré asistir</option>
+            </select>
+
+            <button
+                type="submit"
+                id="btnEnviar"
+                class="boton-enviar"
+            >
+                Confirmar asistencia
+            </button>
+
+            <p
+                id="mensajeFormulario"
+                class="mensaje-formulario"
+                aria-live="polite"
+            ></p>
+
+        </form>
+
+    </div>
+
+</section>
