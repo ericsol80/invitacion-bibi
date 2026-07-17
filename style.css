@@ -333,3 +333,80 @@ BOTONES
     color:#111;
 
 }
+/* =================================
+   INFORMACIÓN DEL EVENTO
+================================= */
+
+.datos-evento {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto 28px;
+    color: white;
+}
+
+.datos-evento h2 {
+    margin: 0 0 24px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.dato-evento {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 18px;
+    padding: 17px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    border-radius: 17px;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.icono-dato {
+    flex-shrink: 0;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.dato-evento strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.dato-evento p {
+    margin: 3px 0;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 15px;
+}
+
+.indicaciones-evento,
+.mensaje-regalo {
+    margin-top: 18px;
+    padding: 20px 18px;
+    border: 1px solid rgba(241, 168, 201, 0.32);
+    border-radius: 18px;
+    background: rgba(241, 168, 201, 0.08);
+    text-align: center;
+}
+
+.indicaciones-evento h3,
+.mensaje-regalo h3 {
+    margin: 0 0 10px;
+    font-size: 19px;
+}
+
+.indicaciones-evento p,
+.mensaje-regalo p {
+    margin: 7px 0;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 15px;
+}
+
+.no-ninos {
+    margin-top: 16px !important;
+    color: #f1a8c9 !important;
+    font-size: 18px !important;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
